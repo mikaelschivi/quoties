@@ -1,7 +1,7 @@
 {
-  "name": "biblu",
+  "name": "quotes",
   "version": "1.0.0",
-  "description": "credits to:\r     https://github.com/thiagobodruk/bible/tree/master",
+  "description": "cool stuff :p",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
