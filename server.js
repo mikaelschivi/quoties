@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 
 const port = 3000;
 
@@ -14,8 +15,7 @@ async function quote(){
 }
 
 const app = express();
-// app.use(express.json());
-// app.use(express.urlencoded({extended: true}));
+app.use(cors());
 
 app.listen(port, () => {
     console.log(`app running at port ${port}`);
@@ -26,7 +26,7 @@ app.get('/', async (req, res) => {
     try{
         const idx = await quote();
         res.json(data[idx]);
-    } catch(err) {
+    } catch(err){
         console.log(err)
         res.status(500).send(err);
     }
