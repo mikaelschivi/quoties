@@ -1,2 +1,1 @@
-credits to:
-    *
+#cool stuff :p
