@@ -10,7 +10,6 @@ const jsonData = fs.readFileSync('./src/data.json', 'utf8');
 async function quote(){
     const jsonLength = JSON.parse(jsonData).length;
     const random = Math.floor(Math.random() * jsonLength);
-    
     return random;
 }
 
